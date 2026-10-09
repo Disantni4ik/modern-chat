@@ -61,8 +61,8 @@ export default function InitialLayout() {
         name="chat/[id]"
         options={{
           headerShown: true,
+          presentation: "modal",
           title: "Чат",
-          headerBackTitle: "Назад",
         }}
       />
       <Stack.Screen
