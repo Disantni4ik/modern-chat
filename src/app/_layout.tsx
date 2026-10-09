@@ -4,6 +4,7 @@ import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { ConvexReactClient } from "convex/react";
 import * as SecureStore from "expo-secure-store";
 import { Platform } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import '../../global.css';
 
@@ -28,7 +29,9 @@ export default function RootLayout() {
       }
     >
       <SafeAreaView className="flex-1 bg-black">
-        <InitialLayout />
+        <GestureHandlerRootView>
+          <InitialLayout />
+        </GestureHandlerRootView>
       </SafeAreaView>
     </ConvexAuthProvider>
   );

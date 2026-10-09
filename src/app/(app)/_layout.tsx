@@ -17,6 +17,13 @@ export default function AppLayout() {
           headerLargeTitle: true,
         }}
       />
+      <Stack.Screen
+        name="user/[id]"
+        options={{
+          title: "Профіль учасника",
+          headerBackTitle: 'Назад',
+        }}
+      />
       
     </Stack>
   );
